@@ -43,6 +43,13 @@ export class NegociacaoController {
         }
 
         this.negociacoes.adiciona(negociacao);
+        console.log(`
+            Data: ${negociacao.data},
+            Quantidade: ${negociacao.quantidade},
+            Valor: ${negociacao.valor}
+        `);
+
+        console.log(JSON.stringify(this.negociacoes, null, 2));
         this.limparFormulario();
         this.atualizaView();
     }
