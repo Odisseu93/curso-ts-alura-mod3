@@ -42,7 +42,7 @@ export class NegociacaoController {
                 return !this.negociacoes
                     .lista()
                     .some(negociacao => negociacao
-                    .ehIgaul(negociacaoDeHoje));
+                    .ehIgual(negociacaoDeHoje));
             });
         })
             .then(negociacoesDeHoje => {
